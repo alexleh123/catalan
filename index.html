@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalan Verbs Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #quiz-container {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        #next-button {
+            display: none;
+        }
+        #feedback {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Catalan Verbs Quiz</h1>
+        <p id="question"></p>
+        <div id="answers"></div>
+        <button id="next-button" onclick="nextQuestion()">Next Question</button>
+        <p id="score">Score: 0</p>
+        <p id="feedback"></p>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
